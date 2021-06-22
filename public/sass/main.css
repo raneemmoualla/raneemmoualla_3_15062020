@@ -1,0 +1,232 @@
+/*header*/
+header {
+  padding: 20px 0;
+}
+
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo img {
+  max-width: 170px;
+}
+
+.container {
+  max-width: 2560px;
+}
+
+@media screen and (min-width: 1800px) {
+  .container {
+    max-width: 1800px;
+    margin: auto;
+  }
+}
+
+.fas {
+  margin-right: 20px;
+}
+
+/*rechercher la ville*/
+.projet-serch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #eaeaea;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  -webkit-box-shadow: unset 0 5px 5px 0 dimgray;
+          box-shadow: unset 0 5px 5px 0 dimgray;
+}
+
+.projet-serch p {
+  padding: 20px 0;
+}
+
+.presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background-color: #f6f6f6;
+  padding: 40px 40px;
+  margin-bottom: 50px;
+}
+
+.presentation__menu {
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding: 20px 0;
+}
+
+.presentation__decouvrer {
+  font-size: 1.2rem;
+  padding-bottom: 20px;
+}
+
+.presentation__explore {
+  padding: 15px 10px;
+  border-radius: 30px;
+  color: white;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  font-weight: bold;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-box-shadow: 4px 4px 6px #aaa;
+          box-shadow: 4px 4px 6px #aaa;
+}
+
+.presentation__explore:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: 15px 15px 10px #aaa;
+          box-shadow: 15px 15px 10px #aaa;
+}
+
+/*Fonctionnement*/
+.fonction__titre {
+  margin: 0 0 20px 22px;
+}
+
+.fonction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.1rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 15px;
+}
+
+.fonction h2 {
+  margin: 0 0 30px 0;
+}
+
+.fonction__choisir {
+  margin: 0 20px 20px 0;
+  font-weight: bold;
+  background-color: #F6F6F6;
+  padding: 30px 50px 30px 18px;
+  margin-left: 20px;
+  text-align: center;
+  border-radius: 20px;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  width: 300px;
+  max-height: 78px;
+}
+
+.fonction__choisir:hover {
+  background-color: #f5edff;
+}
+
+.fonction__choisir:hover .fas {
+  color: #9356DC;
+}
+
+.fonction__choisir__numbre {
+  width: 18px;
+  height: 18px;
+  padding: 4px 4px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: #FFF;
+  position: absolute;
+  top: 30%;
+  left: -4%;
+}
+
+/*restaurents*/
+.restaurents {
+  background-color: #F6F6F6;
+}
+
+.restaurents__title {
+  padding: 30px 0 10px 20px;
+}
+
+.restaurents__box {
+  border-radius: 20px;
+  background-color: white;
+  -webkit-box-shadow: 0 0 20px #aaa;
+          box-shadow: 0 0 20px #aaa;
+  max-width: 280px;
+  max-height: 280px;
+  margin: 30px;
+}
+
+.restaurents__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.restaurents img {
+  width: 100%;
+  min-height: 175px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/*Base*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  max-width: 2560px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=main.css.map */
