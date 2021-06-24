@@ -1,0 +1,25 @@
+    /*footer*/
+    
+    footer {
+        background-color: #353535;
+        color: #FFF;
+        padding: 25px 0px;
+        h3 {
+            margin: 0 0 10px 20px;
+            color: #e6e6e6;
+            font-weight: normal;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: white;
+        }
+        .footer__logo {
+            font-family: 'Shrikhand', sans-serif;
+            font-weight: normal;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+    }
