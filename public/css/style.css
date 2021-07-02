@@ -1,4 +1,3 @@
-/*header*/
 header {
   padding: 20px 0;
 }
@@ -43,8 +42,13 @@ footer .footer__logo {
   margin-bottom: 15px;
 }
 
-.fas {
-  margin-right: 20px;
+.container {
+  max-width: 1600px;
+}
+@media screen and (min-width: 300px) {
+  .container {
+    margin: auto;
+  }
 }
 
 /*rechercher la ville*/
@@ -54,7 +58,7 @@ footer .footer__logo {
   background-color: #eaeaea;
   align-items: center;
   font-weight: bold;
-  box-shadow: unset 0 5px 5px 0 #ddd;
+  box-shadow: #a8a5a5 0 0 5px;
 }
 .projet-serch p {
   padding: 20px 0;
@@ -78,24 +82,28 @@ footer .footer__logo {
   padding-bottom: 20px;
 }
 .presentation__explore {
-  padding: 15px 10px;
+  padding: 20px 15px;
   border-radius: 30px;
   color: white;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
-  font-weight: bold;
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  font-weight: normal;
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 4px 4px 6px #aaa;
+  transform: scale(1);
+  transition: transform 400ms;
 }
 .presentation__explore:hover {
   opacity: 0.8;
+  transform: scale(1.2);
   box-shadow: 15px 15px 10px #aaa;
 }
 
 /*Fonctionnement*/
 .fonction__titre {
   margin: 0 0 20px 22px;
+  font-family: "Roboto", sans-serif;
 }
 
 .fonction {
@@ -105,22 +113,24 @@ footer .footer__logo {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 15px;
+  margin-bottom: 30px;
 }
 .fonction h2 {
   margin: 0 0 30px 0;
 }
 .fonction__choisir {
-  margin: 0 20px 20px 0;
+  margin: 0 30px 20px 0;
   font-weight: bold;
   background-color: #F6F6F6;
   padding: 30px 50px 30px 18px;
   margin-left: 20px;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 30px;
   position: relative;
   font-family: "Roboto", sans-serif;
   width: 300px;
   max-height: 78px;
+  box-shadow: 10px 10px 8px #f5f1f1;
 }
 .fonction__choisir:hover {
   background-color: #f5edff;
@@ -143,99 +153,6 @@ footer .footer__logo {
 /*restaurents*/
 .fas {
   margin-right: 20px;
-}
-
-/*rechercher la ville*/
-.projet-serch {
-  display: flex;
-  justify-content: center;
-  background-color: #eaeaea;
-  align-items: center;
-  font-weight: bold;
-  box-shadow: unset 0 5px 5px 0 #ddd;
-}
-.projet-serch p {
-  padding: 20px 0;
-}
-
-.presentation {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  background-color: #f6f6f6;
-  padding: 40px 40px;
-  margin-bottom: 50px;
-}
-.presentation__menu {
-  font-weight: bold;
-  font-size: 1.6rem;
-  padding: 20px 0;
-}
-.presentation__decouvrer {
-  font-size: 1.2rem;
-  padding-bottom: 20px;
-}
-.presentation__explore {
-  padding: 15px 10px;
-  border-radius: 30px;
-  color: white;
-  font-size: 15px;
-  font-family: "Roboto", sans-serif;
-  margin: 0 auto;
-  font-weight: bold;
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: 4px 4px 6px #aaa;
-}
-.presentation__explore:hover {
-  opacity: 0.8;
-  box-shadow: 15px 15px 10px #aaa;
-}
-
-/*Fonctionnement*/
-.fonction__titre {
-  margin: 0 0 20px 22px;
-}
-
-.fonction {
-  display: flex;
-  font-size: 1.1rem;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 15px;
-}
-.fonction h2 {
-  margin: 0 0 30px 0;
-}
-.fonction__choisir {
-  margin: 0 20px 20px 0;
-  font-weight: bold;
-  background-color: #F6F6F6;
-  padding: 30px 50px 30px 18px;
-  margin-left: 20px;
-  text-align: center;
-  border-radius: 20px;
-  position: relative;
-  font-family: "Roboto", sans-serif;
-  width: 300px;
-  max-height: 78px;
-}
-.fonction__choisir:hover {
-  background-color: #f5edff;
-}
-.fonction__choisir:hover .fas {
-  color: #9356DC;
-}
-.fonction__choisir__numbre {
-  width: 18px;
-  height: 18px;
-  padding: 4px 4px;
-  border-radius: 50%;
-  background-color: #9356DC;
-  color: #FFF;
-  position: absolute;
-  top: 30%;
-  left: -4%;
 }
 
 /*restaurents*/
@@ -243,7 +160,8 @@ footer .footer__logo {
   background-color: #F6F6F6;
 }
 .restaurents__title {
-  padding: 30px 0 10px 20px;
+  padding: 30px 0 10px 40px;
+  font-size: 1.4em;
 }
 .restaurents__container {
   display: flex;
@@ -258,6 +176,11 @@ footer .footer__logo {
   position: relative;
   margin: 25px;
   width: 330px;
+}
+@media screen and (min-width: 300px) {
+  .restaurents__box {
+    max-width: 330px;
+  }
 }
 .restaurents__box img {
   width: 100%;
@@ -292,7 +215,7 @@ footer .footer__logo {
 }
 .restaurents__box .heart-section:hover .icon--empty {
   opacity: 0;
-  transition-duration: 0.5s;
+  transition-duration: 1s;
 }
 .restaurents__box .fa-heart {
   position: absolute;
@@ -343,6 +266,53 @@ body {
   box-sizing: border-box;
 }
 
+/*animation loader*/
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes off {
+  from {
+    opacity: 98%;
+  }
+  to {
+    display: none;
+    opacity: 0%;
+    z-index: -1;
+  }
+}
+/*loader*/
+.bloc {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  animation: off;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  transition: opacity 3s ease-in-out;
+  animation-fill-mode: both;
+}
+.bloc__loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #9356DC;
+  border-right: 16px solid #FF79DA;
+  border-bottom: solid 16px #99E2D0;
+  width: 120px;
+  height: 120px;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  animation: rotate 1100s linear infinite;
+  animation-duration: 3s;
+}
+
 /*photo resturent*/
 .photo__restaurant img {
   width: 100%;
@@ -355,6 +325,7 @@ body {
   background-color: #eaeaea;
   border-radius: 40px 40px 0 0;
   position: relative;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 300px) {
   .section-restaurants-menu {
@@ -413,7 +384,7 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.menu-content__describtion {
+.menu-content__description {
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -428,7 +399,7 @@ body {
 }
 .menu-content:hover .menu-content__prix {
   position: relative;
-  right: 20px;
+  left: -10px;
 }
 .menu-content__confirmation {
   border-radius: 0 15px 15px 0;
@@ -454,24 +425,27 @@ body {
 
 /*commande*/
 .order-button {
-  margin-bottom: 20px;
+  padding: 20px;
 }
 .order-button p {
   align-self: center;
   padding: 15px 40px;
   border-radius: 30px;
   color: white;
-  width: 100px;
+  width: 90px;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
   font-weight: bold;
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 4px 4px 6px #aaa;
+  transform: scale(1);
+  transition: transform 400ms;
 }
 .order-button p:hover {
   opacity: 0.9;
   box-shadow: 15px 15px 10px #aaa;
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=style.css.map */

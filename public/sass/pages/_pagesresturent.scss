@@ -13,6 +13,7 @@
         background-color: #eaeaea;
         border-radius: 40px 40px 0 0;
         position: relative;
+        margin-bottom: 30px;
         @media screen and (min-width: 300px) {
             margin: -50px 0;
         }
@@ -68,7 +69,7 @@
             text-overflow: ellipsis;
             white-space: nowrap;
         }
-        &__describtion {
+        &__description {
             margin: 0;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -83,7 +84,7 @@
         }
         &:hover &__prix {
             position: relative;
-            right: 20px;
+            left: -10px;
         }
         &__confirmation {
             border-radius: 0 15px 15px 0;
@@ -110,22 +111,25 @@
     /*commande*/
     
     .order-button {
-        margin-bottom: 20px;
+        padding: 20px;
         p {
             align-self: center;
             padding: 15px 40px;
             border-radius: 30px;
             color: white;
-            width: 100px;
+            width: 90px;
             font-size: 15px;
             font-family: "Roboto", sans-serif;
             margin: 0 auto;
             font-weight: bold;
             background-image: linear-gradient(to bottom right, $colour-secondary, $colour-primary);
             box-shadow: 4px 4px 6px #aaa;
+            transform: scale(1);
+            transition: transform 400ms;
             &:hover {
                 opacity: 0.9;
                 box-shadow: 15px 15px 10px #aaa;
+                transform: scale(1.2);
             }
         }
     }

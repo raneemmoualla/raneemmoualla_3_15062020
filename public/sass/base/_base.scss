@@ -32,3 +32,56 @@ p {
 body {
     box-sizing: border-box;
 }
+
+
+/*animation loader*/
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes off {
+    from {
+        opacity: 98%;
+    }
+    to {
+        display: none;
+        opacity: 0%;
+        z-index: -1;
+    }
+}
+
+
+/*loader*/
+
+.bloc {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    animation: off;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    transition: opacity 3s ease-in-out;
+    animation-fill-mode: both;
+    &__loader {
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid $colour-primary;
+        border-right: 16px solid $colour-secondary;
+        border-bottom: solid 16px $colour-tertiary;
+        width: 120px;
+        height: 120px;
+        margin-top: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        animation: rotate 1100s linear infinite;
+        animation-duration: 3s;
+    }
+}
