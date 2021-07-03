@@ -14,6 +14,7 @@
     background-color: #eaeaea;
     align-items: center;
     font-weight: bold;
+    font-size: 0.95em;
     box-shadow: rgb(168, 165, 165) 0 0 5px;
     p {
         padding: 20px 0;
@@ -29,20 +30,21 @@
     margin-bottom: 50px;
     &__menu {
         font-weight: bold;
-        font-size: 1.6rem;
-        padding: 20px 0;
+        font-size: 1.7rem;
+        padding-left: 10px;
     }
     &__decouvrer {
-        font-size: 1.2rem;
-        padding-bottom: 20px;
+        font-size: 1em;
+        padding-bottom: 15px;
     }
     &__explore {
         padding: 20px 15px;
         border-radius: 30px;
+        width: 220px;
         color: white;
-        font-size: 15px;
+        font-size: 1.1em;
         font-family: "Roboto", sans-serif;
-        margin: 0 auto;
+        margin: auto;
         font-weight: normal;
         background-image: linear-gradient(to bottom right, $colour-secondary, $colour-primary);
         box-shadow: 4px 4px 6px #aaa;
@@ -59,9 +61,14 @@
 
 /*Fonctionnement*/
 
+.fas {
+    margin-right: 20px;
+}
+
 .fonction__titre {
     margin: 0 0 20px 22px;
     font-family: 'Roboto', sans-serif;
+    padding-left: 12px;
 }
 
 .fonction {
@@ -71,23 +78,23 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 15px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     h2 {
         margin: 0 0 30px 0;
     }
     &__choisir {
-        margin: 0 30px 20px 0;
+        margin: 10px 30px 20px 0;
         font-weight: bold;
         background-color: #F6F6F6;
-        padding: 30px 50px 30px 18px;
+        padding: 30px 40px 30px 18px;
         margin-left: 20px;
         text-align: center;
         border-radius: 30px;
         position: relative;
         font-family: 'Roboto', sans-serif;
         width: 300px;
-        max-height: 78px;
-        box-shadow: 10px 10px 8px rgb(245, 241, 241);
+        max-height: 80px;
+        box-shadow: 5px 10px 15px #eaeaea;
         &:hover {
             background-color: #f5edff;
             .fas {
@@ -97,7 +104,7 @@
         &__numbre {
             width: 18px;
             height: 18px;
-            padding: 4px 4px;
+            padding: 5px 5px;
             border-radius: 50%;
             background-color: $colour-primary;
             color: #FFF;
@@ -111,18 +118,15 @@
 
 /*restaurents*/
 
-.fas {
-    margin-right: 20px;
-}
-
-
-/*restaurents*/
-
 .restaurents {
     background-color: #F6F6F6;
+    padding-bottom: 50px;
     &__title {
         padding: 30px 0 10px 40px;
-        font-size: 1.4em;
+        font-size: 1.2em;
+        @media screen and ( min-width: 760px) {
+            padding-left: 5%;
+        }
     }
     &__container {
         display: flex;
@@ -131,18 +135,18 @@
         justify-content: center;
     }
     &__box {
+        justify-items: center;
         border-radius: 20px;
         background-color: white;
-        box-shadow: 0 0 20px #aaa;
+        box-shadow: 4px 4px 6px #aaa;
         position: relative;
-        margin: 25px;
-        width: 330px;
-        @media screen and ( min-width: 300px) {
+        margin: 10px 25px;
+        @media screen and ( min-width: 760px) {
             max-width: 330px;
         }
         img {
             width: 100%;
-            height: 175px;
+            height: 200px;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
             object-fit: cover;
@@ -177,7 +181,7 @@
         }
         .fa-heart {
             position: absolute;
-            left: 285px;
+            left: 85%;
             font-size: 1.8em;
             cursor: pointer;
         }
@@ -186,7 +190,7 @@
         position: absolute;
         top: 10px;
         right: 10px;
-        border-radius: 5px;
+        border-radius: 4px;
         padding: 3px 7px 7px 7px;
         background-color: $colour-tertiary;
     }
