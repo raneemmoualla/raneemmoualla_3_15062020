@@ -85,7 +85,7 @@
     &__choisir {
         margin: 10px 30px 20px 0;
         font-weight: bold;
-        background-color: #F6F6F6;
+        background-color: #f0efef;
         padding: 30px 40px 30px 18px;
         margin-left: 20px;
         text-align: center;
@@ -97,6 +97,7 @@
         box-shadow: 5px 10px 15px #eaeaea;
         &:hover {
             background-color: #f5edff;
+            opacity: 0.8;
             .fas {
                 color: $colour-primary;
             }
@@ -161,29 +162,6 @@
             &__nom {
                 position: relative;
             }
-        }
-        .heart-section {
-            margin-top: 5px;
-            .icon--full {
-                color: white;
-            }
-            &:hover .icon--full {
-                background: linear-gradient($colour-primary, $colour-secondary);
-                background-clip: inherit;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                transition: color 0.9s;
-            }
-            &:hover .icon--empty {
-                opacity: 0;
-                transition-duration: 1s;
-            }
-        }
-        .fa-heart {
-            position: absolute;
-            left: 85%;
-            font-size: 1.8em;
-            cursor: pointer;
         }
     }
     .btn-nouveau {

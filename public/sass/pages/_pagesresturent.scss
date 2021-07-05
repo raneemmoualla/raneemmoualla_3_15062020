@@ -1,135 +1,146 @@
-    /*photo resturent*/
-    
-    .photo__restaurant {
-        img {
-            width: 100%;
-            height: 270px;
-            object-fit: cover;
-        }
-    }
-    /* menu du restaurant*/
-    
-    .section-restaurants-menu {
-        background-color: #eaeaea;
-        border-radius: 40px 40px 0 0;
-        position: relative;
-        margin-bottom: 30px;
-        @media screen and (min-width: 300px) {
-            margin: -50px 0;
-        }
-        .menu-header {
-            align-items: center;
-            display: flex;
-            font-weight: normal;
-            justify-content: space-between;
-            padding: 40px 20px;
-            font-size: 1.2em;
-        }
-        .heart {
-            font-size: 1.7rem;
-            color: rgb(94, 81, 81);
-        }
-    }
-    
-    .menu {
-        max-width: 100%;
-        padding: 0 20px;
-        &__titre {
-            font-family: 'Roboto', sans-serif;
-            font-weight: normal;
-            padding-bottom: 6px;
-            position: relative;
-            text-transform: uppercase;
-            border-bottom: $colour-tertiary solid 4px;
-            width: 50px;
-        }
-    }
-    
-    .menu-content {
-        background-color: white;
-        border-radius: 15px;
-        box-shadow: 5px 5px 5px #dfdfdf;
-        display: flex;
-        margin: 20px 0;
-        padding-left: 10px;
-        cursor: pointer;
-        max-width: 100%;
-        &__header {
-            flex: 1;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-        &__titre {
-            flex: 1;
-            font-family: 'Roboto', sans-serif;
-            font-weight: bold;
-            margin: 0;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-        &__description {
-            margin: 0;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-        &__prix {
-            position: relative;
-            right: -60px;
-            top: 45px;
-            font-weight: bolder;
-            font-family: 'Roboto', sans-serif;
-        }
-        &:hover &__prix {
-            position: relative;
-            left: -10px;
-        }
-        &__confirmation {
-            border-radius: 0 15px 15px 0;
-            background-color: $colour-tertiary;
-            justify-content: center;
-            width: 80px;
-            visibility: hidden;
-        }
-        &:hover &__confirmation {
-            visibility: visible;
-        }
-        &__check {
-            border-radius: 100px;
-            height: 35px;
-            width: 35px;
-            color: $colour-tertiary;
-            background-color: white;
-            transform: translate(20px, 20px);
-        }
-        &__icon {
-            transform: translate(10px, 10px);
-        }
-    }
-    /*commande*/
-    
-    .order-button {
-        padding: 20px;
-        p {
-            align-self: center;
-            padding: 15px 40px;
-            border-radius: 30px;
-            color: white;
-            width: 90px;
-            font-size: 15px;
-            font-family: "Roboto", sans-serif;
-            margin: 0 auto;
-            font-weight: bold;
-            background-image: linear-gradient(to bottom right, $colour-secondary, $colour-primary);
-            box-shadow: 4px 4px 6px #aaa;
-            transform: scale(1);
-            transition: transform 400ms;
-            &:hover {
-                opacity: 0.9;
-                box-shadow: 15px 15px 10px #aaa;
-                transform: scale(1.2);
-            }
-        }
-    }
+                /*photo resturent*/
+                
+                .photo__restaurant {
+                    img {
+                        width: 100%;
+                        height: 270px;
+                        object-fit: cover;
+                    }
+                }
+                /* menu du restaurant*/
+                
+                .section-restaurants-menu {
+                    background-color: #eaeaea;
+                    border-radius: 40px 40px 0 0;
+                    position: relative;
+                    margin-bottom: 30px;
+                    padding-bottom: 50px;
+                    @media screen and (min-width: 300px) {
+                        margin: -50px 0;
+                    }
+                    .menu-header {
+                        display: flex;
+                        font-weight: normal;
+                        justify-content: space-between;
+                        padding: 40px 20px;
+                        font-size: 1.2em;
+                    }
+                }
+                
+                .menu {
+                    max-width: 100%;
+                    padding: 0 20px;
+                    overflow: hidden;
+                    &__titre {
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: normal;
+                        padding-bottom: 6px;
+                        position: relative;
+                        text-transform: uppercase;
+                        border-bottom: $colour-tertiary solid 4px;
+                        width: 50px;
+                    }
+                }
+                
+                .menu-content {
+                    background-color: white;
+                    border-radius: 15px;
+                    box-shadow: 5px 5px 5px #dfdfdf;
+                    display: flex;
+                    margin: 20px 0;
+                    padding-left: 10px;
+                    cursor: pointer;
+                    max-width: 100%;
+                    height: 80px;
+                    animation: apparition .5s;
+                    animation-timing-function: ease-in-out;
+                    animation-fill-mode: forwards;
+                    transform: scale(0);
+                    &__header {
+                        flex: 1;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    &__titre {
+                        flex: 1;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: bold;
+                        margin: 0;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    &__description {
+                        margin: 0;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    &__prix {
+                        align-items: flex-end;
+                        display: flex;
+                        justify-content: flex-end;
+                        font-weight: bolder;
+                        font-family: 'Roboto', sans-serif;
+                        padding: 20px 40px;
+                    }
+                    &__confirmation {
+                        border-radius: 0 15px 15px 0;
+                        background-color: $colour-tertiary;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 0 -120px 0 16px;
+                        transition-duration: .5s;
+                        width: 80px;
+                        display: flex;
+                    }
+                    &:hover &__confirmation {
+                        margin-right: 0;
+                        margin-left: -20px;
+                    }
+                    &__check {
+                        border-radius: 100px;
+                        height: 25px;
+                        width: 25px;
+                        color: $colour-tertiary;
+                        background-color: white;
+                        align-items: center;
+                        display: flex;
+                        justify-content: center;
+                        transform: translate(10px 20px);
+                        transition-duration: .8s;
+                        &:hover &__check {
+                            transform: rotate(0);
+                        }
+                    }
+                    &__icon {
+                        color: $colour-tertiary;
+                        transform: translate(10px, 0);
+                    }
+                }
+                /*commande*/
+                
+                .order-button {
+                    padding: 20px;
+                    p {
+                        align-self: center;
+                        padding: 15px 40px;
+                        border-radius: 30px;
+                        color: white;
+                        width: 90px;
+                        font-size: 15px;
+                        font-family: "Roboto", sans-serif;
+                        margin: 0 auto;
+                        font-weight: bold;
+                        background-image: linear-gradient(to bottom right, $colour-secondary, $colour-primary);
+                        box-shadow: 4px 4px 6px #aaa;
+                        transform: scale(1);
+                        transition: transform 400ms;
+                        &:hover {
+                            opacity: 0.9;
+                            box-shadow: 15px 15px 10px #aaa;
+                            transform: scale(1.2);
+                        }
+                    }
+                }
