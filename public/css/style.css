@@ -7,20 +7,25 @@ header .logo {
   align-items: center;
 }
 header .logo img {
-  max-width: 180px;
+  max-width: 140px;
+}
+@media screen and (min-width: 760px) {
+  header .logo img {
+    max-width: 280px;
+  }
 }
 
 .fa-arrow-left:before {
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   position: relative;
-  right: 60px;
+  right: 50px;
 }
 
 /*footer*/
 footer {
   background-color: #353535;
   color: #FFF;
-  padding: 20px 0;
+  padding: 20px 15px;
 }
 footer h3 {
   margin: 0 0 10px 20px;
@@ -59,6 +64,11 @@ footer .footer__logo {
   font-size: 0.95em;
   box-shadow: #a8a5a5 0 0 5px;
 }
+@media screen and (min-width: 760px) {
+  .projet-serch {
+    font-size: 1.7em;
+  }
+}
 .projet-serch p {
   padding: 20px 0;
 }
@@ -73,17 +83,26 @@ footer .footer__logo {
 }
 .presentation__menu {
   font-weight: bold;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   padding-left: 10px;
 }
+@media screen and (min-width: 760px) {
+  .presentation__menu {
+    font-size: 2em;
+  }
+}
 .presentation__decouvrer {
-  font-size: 1em;
   padding-bottom: 15px;
+  font-size: 1em;
+}
+@media screen and (min-width: 760px) {
+  .presentation__decouvrer {
+    font-size: 1.4em;
+  }
 }
 .presentation__explore {
-  padding: 20px 15px;
+  padding: 15px;
   border-radius: 30px;
-  width: 220px;
   color: white;
   font-size: 1.1em;
   font-family: "Roboto", sans-serif;
@@ -93,6 +112,11 @@ footer .footer__logo {
   box-shadow: 4px 4px 6px #aaa;
   transform: scale(1);
   transition: transform 400ms;
+}
+@media screen and (min-width: 760px) {
+  .presentation__explore {
+    font-size: 1.5em;
+  }
 }
 .presentation__explore:hover {
   opacity: 0.8;
@@ -120,6 +144,11 @@ footer .footer__logo {
   padding: 0 15px;
   margin-bottom: 40px;
 }
+@media screen and (min-width: 760px) {
+  .fonction {
+    justify-content: space-around;
+  }
+}
 .fonction h2 {
   margin: 0 0 30px 0;
 }
@@ -127,7 +156,7 @@ footer .footer__logo {
   margin: 10px 30px 20px 0;
   font-weight: bold;
   background-color: #f0efef;
-  padding: 30px 40px 30px 18px;
+  padding: 20px 30px 20px 18px;
   margin-left: 20px;
   text-align: center;
   border-radius: 30px;
@@ -228,7 +257,7 @@ a {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1600px;
 }
 
 h2 {
@@ -238,19 +267,18 @@ h2 {
 h4,
 h5 {
   font-family: "Roboto", sans-serif;
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 800;
 }
 
 p {
   font-family: "Roboto", sans-serif;
-  font-size: 1em;
   font-weight: normal;
 }
 
 h3 {
   font-family: "Roboto", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 900;
 }
 
@@ -265,6 +293,7 @@ body {
   position: fixed;
   z-index: 10;
   animation: off;
+  -webkit-animation: off;
   animation-duration: 3s;
   animation-delay: 1s;
   transition: opacity 3s ease-in-out;
@@ -282,6 +311,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   animation: rotate 1100s linear infinite;
+  -webkit-animation: rotate 1100s linear infinite;
   animation-duration: 3s;
 }
 @media screen and (min-width: 760px) {
@@ -317,7 +347,16 @@ body {
   font-weight: normal;
   justify-content: space-between;
   padding: 40px 20px;
-  font-size: 1.2em;
+}
+
+.restaurants__menu {
+  display: grid;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants__menu {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+  }
 }
 
 .menu {
@@ -421,7 +460,7 @@ body {
   padding: 15px 40px;
   border-radius: 30px;
   color: white;
-  width: 90px;
+  width: 80px;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
@@ -469,6 +508,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: color 0.9s;
+  transform: scale(1.1);
 }
 .heart-section:hover .icon--empty {
   opacity: 0;
@@ -501,35 +541,35 @@ body {
 }
 
 .delay-2 {
-  animation-delay: 0.3s;
+  animation-delay: 0.2s;
 }
 
 .delay-3 {
-  animation-delay: 0.5s;
+  animation-delay: 0.3s;
 }
 
 .delay-4 {
-  animation-delay: 0.7s;
+  animation-delay: 0.4s;
 }
 
 .delay-5 {
-  animation-delay: 0.9s;
+  animation-delay: 0.5s;
 }
 
 .delay-6 {
-  animation-delay: 0.11s;
+  animation-delay: 0.6s;
 }
 
 .delay-7 {
-  animation-delay: 0.13s;
+  animation-delay: 0.7s;
 }
 
 .delay-8 {
-  animation-delay: 0.15s;
+  animation-delay: 0.8s;
 }
 
 .delay-9 {
-  animation-delay: 0.17s;
+  animation-delay: 0.9s;
 }
 
 @keyframes apparition {
