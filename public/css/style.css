@@ -215,7 +215,13 @@ footer .footer__logo {
 }
 @media screen and (min-width: 760px) {
   .restaurents__box {
-    max-width: 330px;
+    width: 350px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .restaurents__box {
+    max-width: 410px;
+    min-width: 280px;
   }
 }
 .restaurents__box img {
@@ -508,7 +514,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: color 0.9s;
-  transform: scale(1.1);
+  transform: scale(1);
 }
 .heart-section:hover .icon--empty {
   opacity: 0;
