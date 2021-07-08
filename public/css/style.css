@@ -121,7 +121,7 @@ footer .footer__logo {
 .presentation__explore:hover {
   opacity: 0.8;
   transform: scale(1.2);
-  box-shadow: 15px 15px 10px #aaa;
+  box-shadow: 5px 5px 6px #383737;
 }
 
 /*Fonctionnement*/
