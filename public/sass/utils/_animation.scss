@@ -14,9 +14,7 @@
         opacity: 100%;
     }
     to {
-        display: none;
-        opacity: 0%;
-        z-index: -1;
+        opacity: 0;
     }
 }
 
@@ -47,20 +45,6 @@
     left: 85%;
     font-size: 1.8em;
     cursor: pointer;
-}
-
-@keyframes apparition {
-    0% {
-        transform: scale(0);
-        opacity: 0%;
-    }
-    50% {
-        opacity: 0%;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 100%;
-    }
 }
 
 
