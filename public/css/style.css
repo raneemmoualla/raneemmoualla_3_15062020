@@ -46,15 +46,6 @@ footer .footer__logo {
   padding-top: 20px;
 }
 
-.container {
-  max-width: 1600px;
-}
-@media screen and (min-width: 300px) {
-  .container {
-    margin: auto;
-  }
-}
-
 /*rechercher la ville*/
 .projet-serch {
   display: flex;
@@ -259,13 +250,18 @@ footer .footer__logo {
   margin: 0;
 }
 
+.container {
+  max-width: 1600px;
+}
+@media screen and (min-width: 300px) {
+  .container {
+    margin: auto;
+  }
+}
+
 a {
   text-decoration: none;
   color: black;
-}
-
-.container {
-  max-width: 1600px;
 }
 
 h2 {
